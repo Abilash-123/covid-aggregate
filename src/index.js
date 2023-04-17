@@ -17,7 +17,6 @@ app.get("/totalRecovered",async(req, resp)=>{
     let total = 0;
     for(let i=0; i<data.length; i++){
         total += data[i].recovered
-    }
     resp.status(200).json({
         data:{ _id : "total", recovered : total},
  })
